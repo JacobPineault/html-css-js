@@ -1,4 +1,13 @@
 table {
     width: 100%;
-    color: rgb(8, 82, 221);
+}
+.header {
+    color: red;
+}
+body {
+    font-family: sans-serif;
+    background-color: rgb(230, 246, 216);
+}
+.orange {
+    color: orange;
 }
