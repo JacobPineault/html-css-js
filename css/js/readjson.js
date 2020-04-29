@@ -7,7 +7,6 @@ let students = [
     { name: "Dennis", favNumber: 6 }    
 ];
 
-
 const loaded = () => {
     let ulCtrl = document.getElementById("students");
     for (let student of students) {
