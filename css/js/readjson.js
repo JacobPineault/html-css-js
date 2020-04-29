@@ -10,7 +10,7 @@ let students = [
 const loaded = () => {
     let ulCtrl = document.getElementById("students");
     for (let student of students) {
-        let liTag = `<li>${student.name} whose favorite number is${student.favNumber}`;
+        let liTag = `<li>${student.name} whose favorite number is ${student.favNumber}`;
         ulCtrl.innerHTML += liTag;
     }
 
