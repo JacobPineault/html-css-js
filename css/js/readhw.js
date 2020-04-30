@@ -1,12 +1,17 @@
+const addLiTag = (idx) => {
+    let li = `<li>Number: ${idx}</li>`;
+    document.getElementById("numList").innerHTML += li;
+}
 
 const loaded = () => {
     let sum = 0;
     let count = 0;
     let avg = 0;
     let numCtrl = document.getElementById("numbers");
-    for (i = 1; i < 51; i++) {
-        if ((i % 3) == 0 || (i % 5) == 0) {
-            sum += i;
+    for (idx = 1; idx <= 50; idx++) {
+        if ((idx % 3) == 0 || (idx % 5) == 0) {
+            addLiTag(idx);
+            sum += idx;
             count++;
         }
         avg = (sum / count);
