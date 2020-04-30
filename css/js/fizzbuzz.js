@@ -1,28 +1,22 @@
-const addLiTag = (output) => {
-    let li = `<li>${output}</li>`;
-    document.getElementById("fbnums").innerHTML += li;
-}
-
 const loaded = () => {
-    let output = "";
-
-    let numCtrl = document.getElementById("fbnums");
+    let ulCtrl = document.getElementById("fbnums");
     for (idx = 1; idx <= 50; idx++) {
-        if ((idx % 3) == 0 && (idx % 5) == 0) {
-            output = "FizzBuzz";
-            addLiTag(output);
-        } else if ((idx % 3) == 0){
-            output = "Fizz";
-            addLiTag(output);
-        } else if ((idx % 5) == 0){
-            output = "Buzz";
-            addLiTag(output);
+        if (idx % 3 === 0 && idx % 5 === 0) {
+            let para = `<p> FizzBuzz </p>`;
+            document.write(para.fontcolor("purple"));
+            ulCtrl.innerHTML += para;
+        } else if (idx % 3 === 0) {
+            let para = `<p> Fizz </p>`;
+            document.write(para.fontcolor("red"));
+            ulCtrl.innerHTML += para;
+        } else if (idx % 5 === 0) {
+            let para = `<p> Buzz </p>`;
+            document.write(para.fontcolor("blue"));
+            ulCtrl.innerHTML += para;
         } else {
-            output == idx;
-            addLiTag(output);
+            let para = `<p> ${idx} </p>`;
+            document.write(para.fontcolor("black"));
+            ulCtrl.innerHTML += para;
         }
-        
-       // let liTag = `<li>${output}</li>`;
-        //numCtrl.innerHTML += liTag;
     }
 }
