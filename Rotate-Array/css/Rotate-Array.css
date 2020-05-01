@@ -1,0 +1,47 @@
+#arrayTable {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+}
+
+#mainButtons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+}
+
+#fillArray {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+}
+
+#rotateLeft {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  text-align: center;
+}
+
+#rotateCount {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+}
+
+#rotateRight {
+  display: flex;
+  justify-content: right;
+  flex-direction: row;
+  text-align: center;
+}
+
+#resetArray {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}

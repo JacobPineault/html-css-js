@@ -22,13 +22,17 @@
         </tr>
       </thead>
       <tbody id="tbody"></tbody>
-    </body>
+    </body> 
 </table>
 <hr />
 <div>
-    <input id="tid" type="number" placeholder="ID" />
-    <input id="tname" type="text" placeholder="Company Name" />
-    <input id="tstate" type="text" size="5" placeholder="St" />
-    <button class="btn btn-success" onclick="add()" id="addCustomer">Add Customer</button>
+    <input id="tid" type="number" class="border border-primary" placeholder="ID" style="
+    margin-left: 5px;">
+    <input id="tname" type="text" class="border border-primary" placeholder="Company Name" />
+    <input id="tstate" type="text" size="5" class="border border-primary" placeholder="St" />
+    <button class="btn btn-success" onclick="add()" id="addCustomer">Add</button>
+  </div>
+  <div>
+      <button class="btn btn-outline-light" onclick="submit()">Click me!</button>
   </div>
 </html>
