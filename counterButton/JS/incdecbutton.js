@@ -11,6 +11,9 @@ const numCtrl = (nbr) => {
   if (nbr % 7 === 0) {
     document.getElementById("textbox").style.fontWeight = "bold";
   }
+  if (nbr === 666) {
+    document.getElementById("textbox").style.backgroundColor = "red";
+  }
 };
 
 const decButton = () => {
