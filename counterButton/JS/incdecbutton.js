@@ -1,19 +1,8 @@
 const numCtrl = (nbr) => {
-  document.getElementById("textbox").style.color = "black";
-  document.getElementById("textbox").style.fontStyle = "normal";
-  document.getElementById("textbox").style.fontWeight = "normal";
-  if (nbr % 2 === 0) {
-    document.getElementById("textbox").style.color = "red";
-  }
-  if (nbr % 3 === 0) {
-    document.getElementById("textbox").style.fontStyle = "italic";
-  }
-  if (nbr % 7 === 0) {
-    document.getElementById("textbox").style.fontWeight = "bold";
-  }
-  if (nbr === 666) {
-    document.getElementById("textbox").style.backgroundColor = "red";
-  }
+  let nbrCtrl = document.getElementById("textbox");
+  nbrCtrl.style.color = nbr % 2 === 0 ? "red" : "black";
+  nbrCtrl.style.fontStyle = nbr % 3 === 0 ? "italic" : "normal";
+  nbrCtrl.style.fontWeight = nbr % 7 === 0 ? "bold" : "normal";
 };
 
 const decButton = () => {
