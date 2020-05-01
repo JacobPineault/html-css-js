@@ -1,0 +1,12 @@
+#leftDiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+}
+
+#resetButton {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}

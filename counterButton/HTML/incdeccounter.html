@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ButtonCounter</title>
+    <link href="../CSS/button.css" rel="stylesheet" />
+    <script src="../JS/incdecbutton.js"></script>
+  </head>
+
+  <body>
+    <div id="leftDiv">
+      <button onclick="decButton();" style="margin-right: 5px; height: 30px;">
+        Dec(-)
+      </button>
+      <input
+        id="textbox"
+        readonly=""
+        size="5"
+        type="text"
+        value="0"
+        style="text-align: center; background-color: azure;"
+      />
+      <button onclick="incButton();" style="margin-left: 5px; height: 30px;">
+        Inc(+)
+      </button>
+    </div>
+    <div id="resetButton">
+      <button onclick="reset();" style="margin-top: 5px;">RESET</button>
+    </div>
+  </body>
+</html>
