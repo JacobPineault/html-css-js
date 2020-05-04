@@ -25,3 +25,14 @@ const display = (jsonresp) => {
 $().ready(() => {
   console.log("jQuery is ready!");
 });
+
+$().ready(() => {
+  console.log("jQuery is ready!");
+  $("#edit").click(() => {
+    let userId = $("#userid").val();
+    $.getJSON(`${url}/users/${userId}`).done((res) => {
+      let jsonresp = res;
+      display(jsonresp);
+    });
+  });
+});

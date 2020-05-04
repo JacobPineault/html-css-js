@@ -23,7 +23,13 @@
         style="background-color: azure;"
         placeholder="Enter User ID"
       />
-      <button id="get" class="btn btn-success">Get User</button>
+      <button
+        id="get"
+        class="btn btn-success"
+        style="margin-top: 5px; margin-bottom: 5px;"
+      >
+        Get User
+      </button>
     </div>
     <table class="table table-striped">
       <tr>
@@ -55,8 +61,37 @@
         <td id="eadmin"></td>
       </tr>
     </table>
-    <div>
-      <button id="edit" class="btn btn-info">Edit User</button>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <button
+          id="edit"
+          class="btn btn-outline-secondary dropdown-toggle"
+          type="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Edit
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#eusername">Username</a>
+          <a class="dropdown-item" href="#efullname">Full Name</a>
+          <a class="dropdown-item" href="#ephonenumber">Phone Number</a>
+          <a class="dropdown-item" href="#eemail">Email</a>
+          <div role="separator" class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+      <input
+        type="text"
+        class="form-control"
+        aria-label="Text input with dropdown button"
+      />
     </div>
+
+    <!-- <div>
+      <button id="edit" class="btn btn-info">Edit User</button>
+    </div> -->
   </body>
 </html>
