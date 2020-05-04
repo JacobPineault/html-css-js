@@ -1,4 +1,11 @@
-#arrayTable {
+#arrayHead {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+}
+
+#tbody {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -12,7 +19,7 @@
   text-align: center;
 }
 
-#fillArray {
+#secondaryButtons {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -38,10 +45,4 @@
   justify-content: right;
   flex-direction: row;
   text-align: center;
-}
-
-#resetArray {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
 }
