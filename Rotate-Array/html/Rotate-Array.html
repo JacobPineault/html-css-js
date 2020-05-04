@@ -14,64 +14,52 @@
     <script src="../js/Rotate-Array.js"></script>
   </head>
   <body style="background-color: blanchedalmond;">
-    <div>
-      <table id="arrayTable">
-        <thead>
-          <tr class="table-warning">
-            <td>Welcome to Array Rotation</td>
-          </tr>
-        </thead>
-        <tbody id="tbody"></tbody>
-      </table>
-    </div>
-    <hr />
-    <div id="fillArray">
-      <button
-        class="btn btn-success"
-        onclick="fillArray()"
-        style="margin: 5px;"
-      >
-        Fill Array
-      </button>
-    </div>
-    <div id="mainButtons">
-      <button
-        class="btn btn-primary"
-        onclick="rotateLeft()"
-        style="margin: 5px;"
-      >
-        &lt;&lt;&lt; Left
-      </button>
-      <input
-        id="rotateCount"
-        readonly=""
-        size="5"
-        type="text"
-        value="0"
-        style="
-          text-align: center;
-          background-color: rgb(173, 240, 240);
-          height: 35px;
-          align-content: flex-start;
-          align-content: space-evenly;
-        "
-      />
-      <button
-        class="btn btn-primary"
-        onclick="rotateRight()"
-        style="margin: 5px;"
-      >
-        Right &gt;&gt;&gt;
-      </button>
-    </div>
-    <div id="resetArray">
-      <button
-        class="btn btn-outline-danger"
-        onclick="reset()"
-        style="margin: 5px;"
-      >
-        RESET
-      </button>
-    </div>
+    <table>
+      <thead id="arrayHead">
+        <tr>
+          <td style="font-size: larger;">Welcome to Array Rotation</td>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
   </body>
+  <hr />
+  <div id="mainButtons">
+    <button class="btn btn-primary" onclick="rotateLeft()" style="margin: 5px;">
+      &lt;&lt;&lt; Left
+    </button>
+    <input
+      id="rotateCount"
+      readonly=""
+      size="5"
+      type="text"
+      value="0"
+      style="
+        text-align: center;
+        background-color: rgb(173, 240, 240);
+        height: 35px;
+        align-content: flex-start;
+        align-content: space-evenly;
+      "
+    />
+    <button
+      class="btn btn-primary"
+      onclick="rotateRight()"
+      style="margin: 5px;"
+    >
+      Right &gt;&gt;&gt;
+    </button>
+  </div>
+  <div id="secondaryButtons">
+    <button class="btn btn-success" onclick="fillArray()" style="margin: 5px;">
+      Fill Array
+    </button>
+    <button
+      class="btn btn-outline-danger"
+      onclick="reset()"
+      style="margin: 5px;"
+    >
+      RESET
+    </button>
+  </div>
 </html>
