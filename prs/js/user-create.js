@@ -7,7 +7,7 @@ $().ready(() => {
     let newUser = {};
     newUser.id = Number($("#eid").val());
     newUser.userName = $("#eusername").val();
-    newUser.passWord = $("#epassword").val();
+    newUser.password = $("#epassword").val();
     newUser.firstName = $("#efirstname").val();
     newUser.lastName = $("#elastname").val();
     newUser.phoneNumber = $("#ephonenumber").val();
@@ -15,5 +15,17 @@ $().ready(() => {
     newUser.isReviewer = $("#eisreviewer").prop("checked");
     newUser.isAdmin = $("#eisadmin").prop("checked");
     console.log("User: ", newUser);
+    $.ajax({
+      method: "POST",
+      url: `${url}/users/`,
+      data: JSON.stringify(newUser),
+      contentType: "application/json",
+    })
+      .done((res) => {
+        console.log("User added!", res);
+      })
+      .fail(() => {
+        console.error(err);
+      });
   });
 });
