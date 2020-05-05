@@ -1,5 +1,5 @@
 let url = "http://localhost:8080";
-let user;
+let user = null;
 
 $().ready(() => {
   console.log("jQuery is ready!");

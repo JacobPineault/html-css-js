@@ -1,0 +1,65 @@
+input {
+  border-radius: 7px;
+}
+
+th {
+  width: 10%;
+}
+
+#eid {
+  width: 35%;
+}
+
+#eusername {
+  width: 35%;
+}
+
+#epassword {
+  width: 35%;
+}
+
+#efullname {
+  width: 35%;
+}
+
+#ephonenumber {
+  width: 35%;
+}
+
+#eemail {
+  width: 35%;
+}
+
+#ereviewer {
+  width: 35%;
+}
+
+#eadmin {
+  width: 35%;
+}
+
+#newUserName {
+  width: 46%;
+}
+
+#newPassword {
+  width: 46%;
+}
+
+#newFirstName {
+  width: 80%;
+  border-radius: 7px;
+}
+
+#newLastName {
+  width: 80%;
+  border-radius: 7px;
+}
+
+#newPhoneNumber {
+  width: 46%;
+}
+
+#newEmail {
+  width: 46%;
+}
