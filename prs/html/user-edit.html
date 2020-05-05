@@ -35,34 +35,127 @@
       <tr>
         <th>ID:</th>
         <td id="eid"></td>
+         <!-- <td>
+          <input id="newId" type="number" placeholder="" size="5" readonly="" style="background-color: azure;width: fit-content;">
+        </td> -->
       </tr>
       <tr>
         <th>Username:</th>
         <td id="eusername"></td>
+        <td>
+          <input
+            id="newUserName"
+            type="text"
+            size="25"
+            placeholder="Enter New Username"
+            style="background-color: azure;"
+          />
+        </td>
+      </tr>
+      <tr>
+        <th>Password:</th>
+        <td id="epassword"></td>
+        <td>
+          <input
+            id="newPassword"
+            type="text"
+            size="25"
+            placeholder="Enter New Password"
+            style="background-color: azure;"
+          />
+        </td>
       </tr>
       <tr>
         <th>Full Name:</th>
         <td id="efullname"></td>
+        <td>
+        <form>
+          <div class="form-row">
+            <div class="col">
+              <input
+                id="newFirstName"
+                type="text"
+                class="form-control"
+                placeholder="First Name"
+                style="background-color: azure;"
+              />
+            </div>
+            <div class="col">
+              <input
+                id="newLastName"
+                type="text"
+                class="form-control"
+                placeholder="Last Name"
+                style="background-color: azure;"
+              />
+            </div>
+          </div>
+        </form>
+        </td>
+        <!-- <td>
+          <input
+            id="efullname"
+            type="text"
+            size="25"
+            placeholder="Enter Full Name"
+            style="background-color: azure;"
+          />
+        </td> -->
       </tr>
       <tr>
         <th>Phone Number:</th>
         <td id="ephonenumber"></td>
+        <td>
+          <input
+            id="newPhoneNumber"
+            type="text"
+            size="25"
+            placeholder="Enter New Phone Number"
+            style="background-color: azure;"
+          />
+        </td>
       </tr>
       <tr>
         <th>Email:</th>
         <td id="eemail"></td>
+        <td>
+          <input
+            id="newEmail"
+            type="text"
+            size="25"
+            placeholder="Enter New Email"
+            style="background-color: azure;"
+          />
+        </td>
       </tr>
       <tr>
         <th>Reviewer:</th>
         <td id="ereviewer"></td>
+        <td>
+        <div class="form-check">
+          <input
+            class="form-check-input position-static"
+            type="checkbox"
+            id="newReviewerCheck"
+            value="newReviewer"
+            aria-label="..."
+          />
+        </div>
+        </td>
       </tr>
       <tr>
         <th>Admin:</th>
         <td id="eadmin"></td>
+        <td>
+        <input class="form-check-input position-static" type="checkbox" id="blanknewAdminCheckbox" value="newAdminCheck" aria-label="..." style="
+    margin-left: 0.5px;
+">
+        </div>
+        </td>
       </tr>
     </table>
 
-    <div class="input-group mb-3">
+    <!-- <div class="input-group mb-3">
       <div class="input-group-prepend">
         <button
           id="edit"
@@ -88,10 +181,12 @@
         class="form-control"
         aria-label="Text input with dropdown button"
       />
-    </div>
-
-    <!-- <div>
-      <button id="edit" class="btn btn-info">Edit User</button>
     </div> -->
+
+    <div>
+      <button id="savechanges" class="btn btn-info" style="margin-left: 5px;">
+        Save changes
+      </button>
+    </div>
   </body>
 </html>
